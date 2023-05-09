@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="429.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnLogin" layoutX="424.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="25.0" prefWidth="25.0" />
+      <Label fx:id="labelArtikel" layoutX="18.0" layoutY="52.0" prefHeight="25.0" prefWidth="211.0" text="Produkte:" />
+      <TextArea fx:id="textAreaDetail" editable="false" layoutX="248.0" layoutY="80.0" prefHeight="176.0" prefWidth="200.0" />
+      <Label fx:id="labelDetail" layoutX="248.0" layoutY="52.0" prefHeight="25.0" prefWidth="200.0" text="Details:" />
+      <Button fx:id="btnClose" layoutX="294.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="25.0" prefWidth="106.0" text="Schließen" />
+      <TextField fx:id="textFieldEmail" layoutX="159.0" layoutY="22.0" prefHeight="25.0" prefWidth="123.0" promptText="email" />
+      <Label fx:id="labelLogin" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="179.0" layoutY="26.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#3632b4" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnAddToCart" layoutX="278.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnAddToCart" prefHeight="25.0" prefWidth="137.0" text="in den Warenkorb" />
+      <Button fx:id="btnCart" alignment="CENTER" layoutX="32.0" layoutY="22.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnCart" prefHeight="25.0" prefWidth="75.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="textFieldAmount" alignment="CENTER" layoutX="315.0" layoutY="303.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label fx:id="labelAmounttext" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="303.0" prefHeight="25.0" prefWidth="50.0" text="Menge: " />
+      <Label fx:id="labelInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="260.0" prefHeight="37.0" prefWidth="200.0" />
+      <Label fx:id="label" alignment="CENTER" layoutX="159.0" layoutY="5.0" prefHeight="18.0" prefWidth="253.0" text="Melden sie sich bitte zuerst an" textAlignment="CENTER" textFill="#9c9393">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnShowBills" layoutX="387.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnShowBills" prefHeight="25.0" prefWidth="25.0" />
+      <PasswordField fx:id="textFieldPassword" layoutX="288.0" layoutY="22.0" prefHeight="25.0" prefWidth="123.0" promptText="password" />
+      <TableView fx:id="tableViewMain" layoutX="18.0" layoutY="80.0" prefHeight="331.0" prefWidth="211.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="116.5714054107666" text="Bezeichnung" />
+          <TableColumn fx:id="priceColumn" prefWidth="93.71429225376673" text="Preis" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

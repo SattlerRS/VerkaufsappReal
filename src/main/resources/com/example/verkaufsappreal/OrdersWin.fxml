@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnClose" layoutX="27.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="28.0" prefWidth="28.0" />
+      <ListView fx:id="listViewOrders" layoutX="8.0" layoutY="53.0" prefHeight="382.0" prefWidth="468.0" />
+      <Label fx:id="label" alignment="CENTER" layoutX="71.0" layoutY="444.0" prefHeight="38.0" prefWidth="341.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" alignment="CENTER" layoutX="85.0" layoutY="7.0" prefHeight="38.0" prefWidth="341.0" text="Ihre Bestellungen:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePickerFrom" layoutX="192.0" layoutY="493.0" prefHeight="25.0" prefWidth="99.0" />
+      <Label fx:id="labelFrom" layoutX="164.0" layoutY="497.0" text="Von:" />
+      <DatePicker fx:id="datePickerTo" layoutX="325.0" layoutY="493.0" prefHeight="25.0" prefWidth="99.0" />
+      <Label fx:id="labelTo" layoutX="302.0" layoutY="497.0" text="Bis:" />
+      <Button fx:id="btnFilter" layoutX="441.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnFilter" prefHeight="28.0" prefWidth="28.0" />
+      <Button fx:id="btnShowFilter" layoutX="71.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnShowFilter" prefHeight="28.0" prefWidth="28.0" />
+   </children>
+</AnchorPane>
